@@ -1,60 +1,49 @@
-/* Reset some default styles */
-* {
+/* Reset styles */
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body,
-html {
-    height: 100%;
-    font-family: 'Outfit', sans-serif;
+body, html{
+    font-family: Outfit, sans-serif;
 }
 
-/* Center the container in the middle of the screen */
-.container {
+.container{
+    background-color: hsl(212, 45%, 89%);
+    min-height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    padding: 20px;
-    background-color: hsl(212, 45%, 89%);
-}
-
-.card {
-    background-color: hsl(0, 0%, 100%);
-    padding: 20px;
     text-align: center;
-    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
     width: 100%;
     max-width: 375px;
-    /* Mobile width */
+    padding: 20px;
+    border-radius: 20px;
+
 }
 
-/* Responsive design for desktop */
-@media (min-width: 1440px) {
-    .card {
-        max-width: 400px;
-        /* Adjust the max width as per the design */
-    }
+.qr-code{
+    width: 100%;
+    margin: 20px;
+    border-radius: 20px;
 }
 
-.qr-code {
-    max-width: 100%;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-.card h1 {
-    color: hsl(218, 44%, 22%);
-    font-size: 22px;
-    /* Adjust the font size as needed */
+.card h1{
+    margin: 20px;
     font-weight: 700;
-    margin-bottom: 20px;
 }
 
-.card p {
-    color: hsl(220, 15%, 55%);
+.card p{
     font-size: 15px;
+    margin: 20px;
     font-weight: 400;
 }
