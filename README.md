@@ -18,7 +18,7 @@ This is a solution to the QR code component.
 
 ### Screenshot
 
-![](./screenshot/Screenshot%20QR%20Code%20Component.png)
+![](./screenshot/QR%20Code%20Component.png)
 
 
 ### Links
